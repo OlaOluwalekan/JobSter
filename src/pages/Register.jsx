@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Wrapper from '../assets/wrappers/RegisterPage'
-import { Logo } from '../components'
+import Logo from '../components/Logo'
 import FormRow from '../components/FormRow'
 import { toast } from 'react-toastify'
 

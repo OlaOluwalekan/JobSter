@@ -1,11 +1,13 @@
-import logo from '../assets/images/logo.svg'
+import { Link } from 'react-router-dom'
 import main from '../assets/images/main.svg'
+import Wrapper from '../assets/wrappers/Testing'
+import { Logo } from '../components'
 
 const Landing = () => {
   return (
-    <main>
+    <Wrapper>
       <nav>
-        <img src={logo} alt='jobster logo' className='logo' />
+        <Logo />
       </nav>
       <div className='container page'>
         {/* info */}
@@ -19,11 +21,14 @@ const Landing = () => {
             consequatur saepe dolore, autem atque est! Laboriosam corporis ab
             odio quibusdam hic.
           </p>
-          <button className='btn hero-btn'>register/login</button>
+          <Link to='/register' className='btn hero-btn'>
+            register/login
+          </Link>
         </div>
         <img src={main} alt='jobster main' className='img main-img' />
       </div>
-    </main>
+    </Wrapper>
   )
 }
+
 export default Landing
